@@ -1,54 +1,94 @@
+/* Button styles */
+#butt, #butt1 {
+    border-radius: 20px;
+    border-color: black;
+    transition: all 0.3s ease;
+}
 
-#butt
-{
+#butt:hover, #butt1:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Card styling */
+#card1 {
     border-radius: 20px;
-    border-color: black;
-}
-#card1
-{
-    border-radius: 30px;
-    border-color: black;
-}
-#butt1
-{
-    border-radius: 20px;
-    border-color: black;
-}
-.parent
-{
-    display: flex;
-    flex-direction: row;
-    
-}
-.cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px auto;
 }
 
 .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive card layout */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Parent and container adjustments */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#container2,
+#container3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#container2 h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+footer {
+    padding: 2rem 1rem;
+    color: white;
+}
+
+footer h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+footer .child p {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 0.9rem;
+}
+
+/* Social icons styling */
+footer .child i {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    #container2 h1 {
+        font-size: 1.4rem;
     }
-#container3
-{
-    display: flex;
-    margin-top: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
 }
-#container2
-{
-    display: flex;
-    margin-top: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-
-
